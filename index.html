@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>CHRISTMAS</title>
+</head>
+<body>
+    <h1 class="title">
+        CHRISTMAS
+    </h1>
+    <h1 class="title2">
+        New Jeans
+    </h1>
+
+    <figure class="logo2">
+        <img src="image/logo.png" alt="" class="nLogo">
+    </figure>
+    <!-- <img src="image/logo.png" alt="" class="nLogo"> -->
+
+
+
+    <div class="bar">
+    </div>
+    <div class="nav">
+        <a href="#">TREE</a>
+        <a href="#">LIGHT</a>
+        <a href="#">SANTA</a>
+    </div>
+    
+    <div class="nav2">
+        <a href="#">MEMBERS</a>
+        <a href="#">SONGS</a>
+        <a href="#">INFO</a>
+    </div>
+
+    <button class="btn" onclick="changeBackground()">
+        TREE
+    </button>
+
+    <div class="logo">
+        <a target="_blank" href="https://newjeans.kr/">
+            <img src="image/newjeans.png" alt="newjeans logo" class="song">
+            <!-- <ion-icon name="musical-note" class="song"></ion-icon> -->
+        </a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCAtGl8OEPCflzqBSaGud1_w">
+            <ion-icon name="logo-youtube" class="youtube"></ion-icon>
+        </a>
+    </div>
+
+    <script>
+        var body = document.getElementsByTagName("body")[0]
+        var flipFlop = false;
+
+        function changeBackground() {
+            flipFlop = !flipFlop
+            if (flipFlop) {
+                body.style = `
+                backdrop-filter: blur(50px);
+                background-image: url("image/background.jpg");
+                backdrop-filter: blur(0px);
+                `
+            } else {
+                body.style = `
+                backdrop-filter: blur(50px);
+                background-image: url("image/background2.jpg");
+                backdrop-filter: blur(0px);
+                `
+            }
+        }
+    </script>
+</body>
+</html>

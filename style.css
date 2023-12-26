@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'lobster';
+    src: url("Lobster-Regular.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lobster';
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.3s;
+}
+
+.nLogo
+{
+    visibility: hidden;
+}
+
+.title
+{
+    position: absolute;
+    visibility: visible;
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 50px;
+    animation: titleAnim 5s ease infinite;
+    transition: 0.5s;
+}
+@keyframes titleAnim {
+    0%
+    {
+        letter-spacing: 50px;
+    }
+    50%
+    {
+        letter-spacing: 45px;
+    }
+    100%
+    {
+        letter-spacing: 50px;
+    }
+}
+.title:hover
+{
+    font-size: 7rem;
+}
+
+.title2
+{
+    position: absolute;
+    visibility: hidden;
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 50px;
+    animation: titleAnim 5s ease infinite;
+    transition: 0.5s;
+}
+@keyframes titleAnim {
+    0%
+    {
+        letter-spacing: 50px;
+    }
+    50%
+    {
+        letter-spacing: 45px;
+    }
+    100%
+    {
+        letter-spacing: 50px;
+    }
+}
+.title2:hover
+{
+    font-size: 7rem;
+}
+
+.nav
+{
+    position: absolute;
+    top: 5%;
+}
+
+.nav a
+{
+    position: relative;
+    margin: 100px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.nav a:hover
+{
+    top: 3%;
+    font-size: 3rem;
+}
+
+.bar
+{
+    position: absolute;
+    top: 10%;
+    width: 65%;
+    border: 1px solid white;
+    animation: barWave infinite ease 1s;
+    transition: 0.3s;
+}
+.bar:hover
+{
+    width: 30%;
+}
+
+.btn
+{
+    position: absolute;
+    top: 65%;
+    width: 250px;
+    height: 100px;
+    font-size: 2rem;
+    color: white;
+    border: 3px solid white;
+    border-radius: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+.btn:hover
+{
+    backdrop-filter: blur(100px);
+    width: 350px;
+    color: black;
+    background: white;
+}
+
+.logo
+{
+    position: absolute;
+
+    /* right: 3%; */
+    bottom: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    transition: 0.3s;
+}
+.logo a
+{
+    text-decoration: none;
+    color: red;
+    margin: 10px;
+}
+.youtube:hover
+{
+    animation-name: colorChangeYT;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+@keyframes colorChangeYT {
+    0%
+    {
+        filter: blur(0px);
+    }
+    50%
+    {
+        filter: blur(5px);
+    }
+    100%
+    {
+        filter: blur(0px);
+    }
+}
+.song
+{
+    width: 50%;
+    height: 50%;
+}
+.song:hover
+{
+    animation-name: colorChangeSong;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+@keyframes colorChangeSong {
+    0%
+    {
+        filter: blur(0px);
+    }
+    50%
+    {
+        filter: blur(5px);
+    }
+    100%
+    {
+        filter: blur(0px);
+    }
+}
+
+.nav2
+{
+    visibility: hidden;
+    position: absolute;
+    top: 5%;
+}
+
+.nav2 a
+{
+    position: relative;
+    margin: 100px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+.nav2 a:hover
+{
+    top: 3%;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .title
+    {
+        font-size: 2rem;
+        letter-spacing: 0px;
+    }
+    @keyframes titleAnim {
+        0%
+        {
+            letter-spacing: 0px;
+        }
+        50%
+        {
+            letter-spacing: 10px;
+        }
+        100%
+        {
+            letter-spacing: 0px;
+        }
+    }
+
+    .nav a
+    {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .nav2
+    {
+        visibility: hidden;
+    }
+    .logo2
+    {
+        visibility: hidden;
+    }
+    .title2
+    {
+        visibility: hidden;
+    }
+
+    .title
+    {
+        visibility: visible;
+    }
+    .btn
+    {
+        visibility: visible;
+    }
+    .nav
+    {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body
+    {
+        background-color: black;
+        background-image: none;
+    }
+
+    .nav2
+    {
+        visibility: visible;
+    }
+
+    .logo2
+    {
+        visibility: visible;
+        position: absolute;
+        top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nLogo
+    {
+        visibility: visible;
+        position: absolute;
+        top: 20%;
+        transition: 0.3s;
+    }
+    .nLogo:hover
+    {
+        filter: hue-rotate(180deg);
+    }
+
+    .title2
+    {
+        visibility: visible;
+        letter-spacing: 100px;
+    }
+
+    @keyframes titleAnim {
+        0%
+        {
+            letter-spacing: 100px;
+        }
+        50%
+        {
+            letter-spacing: 50px;
+        }
+        100%
+        {
+            letter-spacing: 100px;
+        }
+    }
+
+    .nav
+    {
+        visibility: hidden;
+    }
+
+    .btn
+    {
+        visibility: hidden;
+    }
+
+    .title
+    {
+        visibility: hidden;
+    }
+}
