@@ -20,3 +20,12 @@ But if your page size is greater than 1000px, This web will show the **Special P
 
 5. run index.html
 ```
+
+<h1>
+  Important!
+</h1>
+
+```
+I do not use this page for commercial purposes.
+Also, please never use this page for commercial purposes.
+```
